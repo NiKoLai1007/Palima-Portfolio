@@ -1,4 +1,5 @@
 
+import About from "./Pages/About";
 import FrontPage from "./Pages/Frontpage";
 import Navbar from "./Pages/Navbar";
 
@@ -21,7 +22,7 @@ export const Home = () => {
         className="w-screen h-screen flex items-center justify-center"
       >
         <h2 className="text-3xl font-semibold">About Me</h2>
-       
+       <About />
       </section>
 
       <section

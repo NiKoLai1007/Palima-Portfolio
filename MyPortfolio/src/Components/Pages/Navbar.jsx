@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import ThemeToggle from "./ThemToggle";
 
 
 const Navbar = () => (
@@ -20,7 +20,7 @@ const Navbar = () => (
       <li><a href="#contact" className="hover:text-yellow-400">Contact</a></li>
     </ul>
 
-   
+    <ThemeToggle />
   </nav>
 );
 
