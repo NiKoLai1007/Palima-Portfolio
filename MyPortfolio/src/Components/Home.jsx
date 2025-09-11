@@ -1,7 +1,5 @@
-import React from "react";
+
 import FrontPage from "./Pages/Frontpage";
-
-
 import Navbar from "./Pages/Navbar";
 
 
