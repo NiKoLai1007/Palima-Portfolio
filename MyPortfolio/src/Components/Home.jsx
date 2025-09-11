@@ -21,7 +21,7 @@ export const Home = () => {
         id="about"
         className="w-screen h-screen flex items-center justify-center"
       >
-        <h2 className="text-3xl font-semibold">About Me</h2>
+        <h2 className="text-3xl font-semibold">About</h2>
        <About />
       </section>
 

@@ -67,6 +67,8 @@
   left: 0;
   width: 100vw;
   z-index: 1000;  
+
+  @apply fixed top-0 inset-x-0 flex justify-between items-center px-6 py-4 shadow-lg z-50 bg-gray-900 text-white;
 }
 
 
@@ -75,6 +77,8 @@
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+
+  @apply font-bold text-lg hover:text-yellow-400 transition-colors;
 }
 
 .navbar-links {
@@ -83,6 +87,8 @@
   gap: 1.5rem;
   margin: 0;
   padding: 0;
+
+   @apply hidden md:flex gap-6;
 }
 
 .navbar-links a {
@@ -94,6 +100,21 @@
 
 .navbar-links a:hover {
   color: #facc15;
+}
+
+
+
+/* Mobile Menu */
+.menu-btn {
+  @apply md:hidden text-white;
+}
+
+.mobile-menu {
+  @apply absolute top-16 left-0 w-full bg-gray-800 flex flex-col items-center gap-6 py-6 md:hidden;
+}
+
+.mobile-menu a {
+  @apply hover:text-yellow-400 transition-colors;
 }
 
 

@@ -1,31 +1,46 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemToggle";
 
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
 
-const Navbar = () => (
-  <nav className="fixed top-0 inset-x-0 bg-gray-900 text-white px-6 py-4 flex justify-between items-center shadow-lg z-50">
-   
-    <a 
-      href="#home" 
-      className="font-bold text-lg hover:text-yellow-400 transition-colors duration-200"
-    >
-      MyPortfolio
-    </a>
+  return (
+    <nav className="navbar">
+      {/* Logo */}
+      <a href="/" className="navbar-logo">
+        MyPortfolio
+      </a>
 
-   
-    <ul className="flex gap-6">
-      <li><a href="#home" className="hover:text-yellow-400">Home</a></li>
-      <li><a href="#about" className="hover:text-yellow-400">About</a></li>
-      <li><a href="#projects" className="hover:text-yellow-400">Projects</a></li>
-      <li><a href="#contact" className="hover:text-yellow-400">Contact</a></li>
-    </ul>
+      {/* Desktop Menu */}
+      <ul className="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <ThemeToggle />
+      </ul>
 
-    <ThemeToggle />
-  </nav>
-);
+      {/* Mobile Menu Button */}
+      <button 
+        onClick={() => setOpen(!open)} 
+        className="menu-btn"
+      >
+        {open ? <X size={28} /> : <Menu size={28} />}
+      </button>
 
+      {/* Mobile Dropdown */}
+      {open && (
+        <ul className="mobile-menu">
+          <li><a href="#home" onClick={() => setOpen(false)}>Home</a></li>
+          <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
+          <li><a href="#projects" onClick={() => setOpen(false)}>Projects</a></li>
+          <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+          <ThemeToggle />
+        </ul>
+      )}
+    </nav>
+  );
+};
 
 export default Navbar;
-
-
-
