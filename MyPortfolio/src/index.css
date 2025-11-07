@@ -126,7 +126,10 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden; 
+  height: 100%;
+  margin: 0;
 }
+
 
 
 

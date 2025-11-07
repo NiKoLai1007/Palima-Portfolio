@@ -24,7 +24,14 @@ const FrontPage = () => {
                 <img
                     src={shan}
                     alt="shan"
-                    style={{ borderRadius: '12px', maxWidth: '75%', height: '75%' }}
+                    style={{
+                        borderRadius: '50%',
+                        maxWidth: '400px',
+                        width: '75%',
+                        height: 'auto',
+                        aspectRatio: '1 / 1',
+                        objectFit: 'cover'
+                    }}
                 />
             </div>
         </div>

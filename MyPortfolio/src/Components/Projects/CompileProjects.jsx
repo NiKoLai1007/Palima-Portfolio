@@ -16,7 +16,7 @@ return (
             <h2 className="text-3xl font-bold mb-10">Other Projects</h2>
             <ul className="list-disc list-inside space-y-2">
                     <li>Book Express: Read & Return (VB.Net)</li>
-                    <li>CMS</li>
+                    <li>CMS (Wordpress and Joomla)</li>
                     <li>Vacuum Bot (Hardware)</li>
             </ul>
         </div>
