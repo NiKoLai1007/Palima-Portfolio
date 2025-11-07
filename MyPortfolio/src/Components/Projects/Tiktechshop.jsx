@@ -1,4 +1,4 @@
-import tiktechshopImg from "../../assets/tiktechshop.png";
+import TiktechshopImg from "../../assets/Tiktechshop.png";
 
 export default function TikTechShop() {
   return (
@@ -10,7 +10,7 @@ export default function TikTechShop() {
     >
       <div className="h-40 bg-gray-200 rounded-md flex items-center justify-center mb-4">
         <img
-          src={tiktechshopImg}
+          src={TiktechshopImg}
           alt="TikTechShop Screenshot"
           className="h-full object-contain rounded-md"
         />
